@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
+import Chance from 'chance';
 
 class Detail extends Component {
   render() {
-    return <p>{this.props.message}</p>;
+    return <p>Hello, {chance.first() + " " + chance.last()}</p>;
   }
 }
 
